@@ -1,0 +1,13 @@
+<%- include("partials/head", { title, nav }) %>
+  <h1>Projects</h1>
+  <ul>
+    <% (projects || []).forEach(p => { %>
+      <li>
+        <strong><%= p.name %></strong> — <%= p.tech.join(", ") %>
+        <% if (p.link && p.link !== "#") { %>
+          <a href="<%= p.link %>" target="_blank" rel="noreferrer">View</a>
+        <% } %>
+      </li>
+    <% }) %>
+  </ul>
+<%- include("partials/footer") %>
