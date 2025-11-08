@@ -1,5 +1,4 @@
-#!/usr/bin/env node - Use this to start the server - bin/www
-
+#!/usr/bin/env node - Use this to start the server - bin/www file
 var app = require('../app');
 var debug = require('debug')('express-portfolio-site:server');
 var http = require('http');
