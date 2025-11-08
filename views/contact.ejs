@@ -1,9 +1,26 @@
-<%- include("partials/head", { title, nav }) %>
-  <h1>Contact</h1>
-  <p>Email: alex_u@live.ca</p>
-  <form>
-    <label>Name <input type="text" placeholder="Your name" /></label>
-    <label>Message <textarea rows="4" placeholder="Your message"></textarea></label>
-    <button type="button">Send</button>
-  </form>
-<%- include("partials/footer") %>
+<section class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <h1 class="fw-semibold mb-3 text-center">Contact</h1>
+    <p class="text-muted mb-4 text-center">
+      Email me at <a href="mailto:alex_u@live.ca">alex_u@live.ca</a> or send a quick note using the form.
+    </p>
+    <form class="card shadow-sm p-4">
+      <div class="mb-3">
+        <label class="form-label" for="contact-name">Name</label>
+        <input class="form-control" id="contact-name" name="name" placeholder="Your name">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="contact-email">Email</label>
+        <input class="form-control" id="contact-email" name="email" type="email" placeholder="you@example.com">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="contact-message">Message</label>
+        <textarea class="form-control" id="contact-message" name="message" rows="4" placeholder="How can I help?"></textarea>
+      </div>
+      <button class="btn btn-primary w-100" type="button">
+        <i class="fa-regular fa-paper-plane me-2"></i>
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>

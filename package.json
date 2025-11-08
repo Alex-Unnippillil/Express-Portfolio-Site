@@ -4,8 +4,8 @@
   "description": "Personal Portfolio Website using ExpressJS and implementing the EJS templating engine hosted on AWS",
   "private": true,
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "engines": {
     "node": ">=18.0.0"
